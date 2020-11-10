@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     'Dashboard',
     'Profile',
+    'sign_up'
 ]
 
 SITE_ID = 1
@@ -106,12 +107,12 @@ WSGI_APPLICATION = 'TrayectoriaBack.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config('NAME'),
-        'USER': config('USER'),
-        'PASSWORD': config('PASSWORD'),
-        'HOST': config('HOST'),
-        'PORT': config('PORT')
+        'ENGINE': config('ENGINE', ''),
+        'NAME': config('NAME', ''),
+        'USER': config('USER', ''),
+        'PASSWORD': config('PASSWORD', ''),
+        'HOST': config('HOST', None),
+        'PORT': config('PORT', None)
     }
 }
 
