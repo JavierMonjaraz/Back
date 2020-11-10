@@ -107,12 +107,12 @@ WSGI_APPLICATION = 'TrayectoriaBack.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': config('ENGINE', ''),
-        'NAME': config('NAME', ''),
-        'USER': config('USER', ''),
-        'PASSWORD': config('PASSWORD', ''),
-        'HOST': config('HOST', None),
-        'PORT': config('PORT', None)
+        'ENGINE': config('ENGINE'),
+        'NAME': config('NAME'),
+        'USER': config('USER'),
+        'PASSWORD': config('PASSWORD'),
+        'HOST': config('HOST'),
+        'PORT': config('PORT')
     }
 }
 
